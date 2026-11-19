@@ -3,6 +3,7 @@ import os
 from PyQt5.QtWidgets import QDialog, QLabel, QPushButton, QMessageBox
 from PyQt5.uic import loadUi
 
+PASS_PERCENTAGE = 50
 
 class ResultWindow(QDialog):
     def __init__(self, user, score, total_questions, subject_name="", parent=None):
