@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>750</width>
+     <height>700</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #2B2B2B;
+}</string>
+   </property>
+   <widget class="QLabel" name="titleLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>300</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #F0F0F0;
+    font: bold 16px &quot;Segoe UI&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Manage Admins</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="back_btn">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>20</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;
+    color: #888888;
+    border: 1px solid #4A4A4A;
+    border-radius: 6px;
+    font: 12px &quot;Segoe UI&quot;;
+}
+QPushButton:hover { color: #D4D4D4; }</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="error_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>710</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: #3A1E1E;
+    color: #CF6F6F;
+    border: 1px solid #CF6F6F;
+    border-radius: 8px;
+    font: 13px &quot;Segoe UI&quot;;
+    padding: 10px 14px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="success_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>710</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: #1E3A1E;
+    color: #6FCF6F;
+    border: 1px solid #6FCF6F;
+    border-radius: 8px;
+    font: 13px &quot;Segoe UI&quot;;
+    padding: 10px 14px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="userLabel">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>108</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #888888;
+    font: 11px &quot;Segoe UI&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Username</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="username_input">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>355</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #3A3A3A;
+    color: #F0F0F0;
+    border: 1px solid #4A4A4A;
+    border-radius: 6px;
+    padding: 7px 10px;
+    font: 13px &quot;Segoe UI&quot;;
+}
+QLineEdit:focus { border: 1px solid #D4D4D4; }</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pwdLabel">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>108</y>
+      <width>100</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #888888;
+    font: 11px &quot;Segoe UI&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Password</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pwd_input">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>130</y>
+      <width>340</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    background-color: #3A3A3A;
+    color: #F0F0F0;
+    border: 1px solid #4A4A4A;
+    border-radius: 6px;
+    padding: 7px 10px;
+    font: 13px &quot;Segoe UI&quot;;
+}
+QLineEdit:focus { border: 1px solid #D4D4D4; }</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add_admin_btn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>710</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #D4D4D4;
+    color: #1A1A1A;
+    border: none;
+    border-radius: 6px;
+    font: bold 13px &quot;Segoe UI&quot;;
+    padding: 8px;
+}
+QPushButton:hover { background-color: #F0F0F0; }
+QPushButton:pressed { background-color: #888888; }</string>
+    </property>
+    <property name="text">
+     <string>Add  Admin</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../plus.png</normaloff>../plus.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>12</width>
+      <height>12</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QTableWidget" name="admins_table">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>250</y>
+      <width>710</width>
+      <height>360</height>
+     </rect>
+    </property>
+    <property name="cursor" stdset="0">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTableWidget {
+    background-color: #2B2B2B;
+    color: #D4D4D4;
+    border: 1px solid #4A4A4A;
+    border-radius: 8px;
+    font: 13px &quot;Segoe UI&quot;;
+    gridline-color: #4A4A4A;
+}
+QTableWidget::item { padding: 8px; }
+QTableWidget::item:selected {
+    background-color: #3A3A3A;
+    color: #F0F0F0;
+}
+QHeaderView::section {
+    background-color: #1A1A1A;
+    color: #888888;
+    font: bold 12px &quot;Segoe UI&quot;;
+    border: 1px solid #4A4A4A;
+    padding: 6px;
+}</string>
+    </property>
+    <property name="autoScroll">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="delete_btn">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>620</y>
+      <width>140</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #3A1E1E;
+    color: #CF6F6F;
+    border: 1px solid #CF6F6F;
+    border-radius: 6px;
+    font: bold 13px &quot;Segoe UI&quot;;
+    padding: 8px;
+}
+QPushButton:hover { background-color: #4A2020; }
+QPushButton:pressed { background-color: #2B2B2B; }</string>
+    </property>
+    <property name="text">
+     <string>Delete  Admin</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../trash-2.png</normaloff>../trash-2.png</iconset>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>500</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>500</width>
+     <height>500</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #2B2B2B;
+}</string>
+   </property>
+   <widget class="QLabel" name="error_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>440</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: #3A1E1E;
+    color: #CF6F6F;
+    border: 1px solid #CF6F6F;
+    border-radius: 8px;
+    font: 13px &quot;Segoe UI&quot;;
+    padding: 10px 14px;
+}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="success_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>440</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: #1E3A1E;
+    color: #6FCF6F;
+    border: 1px solid #6FCF6F;
+    border-radius: 8px;
+    font: 13px &quot;Segoe UI&quot;;
+    padding: 10px 14px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="score_label">
+    <property name="geometry">
+     <rect>
+      <x>175</x>
+      <y>70</y>
+      <width>150</width>
+      <height>150</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #F0F0F0;
+    font: bold 28px &quot;Segoe UI&quot;;
+    border: 3px solid #D4D4D4;
+    border-radius: 75px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="result_title">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>232</y>
+      <width>200</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #F0F0F0;
+    font: bold 16px &quot;Segoe UI&quot;;
+}
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="feedback_label">
+    <property name="geometry">
+     <rect>
+      <x>125</x>
+      <y>260</y>
+      <width>250</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #888888;
+    font: 13px &quot;Segoe UI&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="student_subject_label">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>285</y>
+      <width>320</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #D4D4D4;
+    font: 12px &quot;Segoe UI&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="correct_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>130</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #6FCF6F;
+    font: bold 18px &quot;Segoe UI&quot;;
+    background-color: #1E3A1E;
+    border: 1px solid #4A4A4A;
+    border-radius: 8px;
+    padding: 8px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wrong_label">
+    <property name="geometry">
+     <rect>
+      <x>185</x>
+      <y>310</y>
+      <width>130</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #CF6F6F;
+    font: bold 18px &quot;Segoe UI&quot;;
+    background-color: #3A1E1E;
+    border: 1px solid #4A4A4A;
+    border-radius: 8px;
+    padding: 8px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="percent_label">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>310</y>
+      <width>130</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #F0F0F0;
+    font: bold 18px &quot;Segoe UI&quot;;
+    background-color: #3A3A3A;
+    border: 1px solid #4A4A4A;
+    border-radius: 8px;
+    padding: 8px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dashboard_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>420</y>
+      <width>200</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #D4D4D4;
+    color: #1A1A1A;
+    border: none;
+    border-radius: 8px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px;
+}
+QPushButton:hover { background-color: #F0F0F0; }
+QPushButton:pressed { background-color: #888888; }</string>
+    </property>
+    <property name="text">
+     <string>Back to dashboard</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>700</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>700</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"> background-color: #2B2B2B;</string>
+   </property>
+   <widget class="QLabel" name="timer_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>30</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #CF6F6F;
+    font: bold 13px &quot;Segoe UI&quot;;
+    background-color: #3A3A3A;
+    border: 1px solid #4A4A4A;
+    border-radius: 14px;
+    padding: 4px 12px;
+}
+</string>
+    </property>
+    <property name="text">
+     <string>00:00</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="progress_label">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>30</y>
+      <width>140</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #888888;
+    font: 12px &quot;Segoe UI&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Question 3 of 10</string>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="quiz_progressbar">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>72</y>
+      <width>640</width>
+      <height>4</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QProgressBar {
+    background-color: #3A3A3A;
+    border: 1px solid #4A4A4A;
+    border-radius: 2px;
+    text-align: center;
+}
+QProgressBar::chunk {
+    background-color: #D4D4D4;
+    border-radius: 2px;
+    width: 10px;
+}</string>
+    </property>
+    <property name="value">
+     <number>0</number>
+    </property>
+    <property name="format">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="question_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>90</y>
+      <width>640</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    color: #F0F0F0;
+    font: 14px &quot;Segoe UI&quot;;
+    background-color: #3A3A3A;
+    border: 1px solid #4A4A4A;
+    border-radius: 10px;
+    padding: 12px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Question Text Box</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="option_a_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>190</y>
+      <width>660</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #3A3A3A;
+    color: #D4D4D4;
+    border: 1px solid #4A4A4A;
+    border-radius: 8px;
+    font: 13px &quot;Segoe UI&quot;;
+    padding: 10px 14px;
+    text-align: left;
+}
+QPushButton:hover {
+    border: 1px solid #888888;
+    color: #F0F0F0;
+}
+QPushButton:checked {
+    background-color: #444444;
+    color: #F0F0F0;
+    border: 1px solid #D4D4D4;
+}</string>
+    </property>
+    <property name="text">
+     <string>A</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="option_b_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>250</y>
+      <width>660</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #3A3A3A;
+    color: #D4D4D4;
+    border: 1px solid #4A4A4A;
+    border-radius: 8px;
+    font: 13px &quot;Segoe UI&quot;;
+    padding: 10px 14px;
+    text-align: left;
+}
+QPushButton:hover {
+    border: 1px solid #888888;
+    color: #F0F0F0;
+}
+QPushButton:checked {
+    background-color: #444444;
+    color: #F0F0F0;
+    border: 1px solid #D4D4D4;
+}</string>
+    </property>
+    <property name="text">
+     <string>B</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="option_c_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>310</y>
+      <width>660</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #3A3A3A;
+    color: #D4D4D4;
+    border: 1px solid #4A4A4A;
+    border-radius: 8px;
+    font: 13px &quot;Segoe UI&quot;;
+    padding: 10px 14px;
+    text-align: left;
+}
+QPushButton:hover {
+    border: 1px solid #888888;
+    color: #F0F0F0;
+}
+QPushButton:checked {
+    background-color: #444444;
+    color: #F0F0F0;
+    border: 1px solid #D4D4D4;
+}</string>
+    </property>
+    <property name="text">
+     <string>C</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="option_d_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>370</y>
+      <width>660</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #3A3A3A;
+    color: #D4D4D4;
+    border: 1px solid #4A4A4A;
+    border-radius: 8px;
+    font: 13px &quot;Segoe UI&quot;;
+    padding: 10px 14px;
+    text-align: left;
+}
+QPushButton:hover {
+    border: 1px solid #888888;
+    color: #F0F0F0;
+}
+QPushButton:checked {
+    background-color: #444444;
+    color: #F0F0F0;
+    border: 1px solid #D4D4D4;
+}</string>
+    </property>
+    <property name="text">
+     <string>D</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="next_btn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>440</y>
+      <width>320</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #D4D4D4;
+    color: #1A1A1A;
+    border: none;
+    border-radius: 8px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #F0F0F0;
+}
+QPushButton:pressed {
+    background-color: #888888;
+}</string>
+    </property>
+    <property name="text">
+     <string>Next</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../arrow-right.png</normaloff>../arrow-right.png</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="submit_btn">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>440</y>
+      <width>320</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;
+    color: #6FCF6F;
+    border: 1px solid #6FCF6F;
+    border-radius: 8px;
+    font: bold 14px &quot;Segoe UI&quot;;
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #1E3A1E;
+}
+QPushButton:pressed {
+    background-color: #2B2B2B;
+}</string>
+    </property>
+    <property name="text">
+     <string>Submit</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../circle-check-big.png</normaloff>../circle-check-big.png</iconset>
+    </property>
+   </widget>
+   <widget class="QLabel" name="error_label">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>510</y>
+      <width>660</width>
+      <height>35</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    background-color: #3A1E1E;
+    color: #CF6F6F;
+    border: 1px solid #CF6F6F;
+    border-radius: 8px;
+    font: 13px &quot;Segoe UI&quot;;
+    padding: 10px 14px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
