@@ -2,6 +2,8 @@ from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 import os
 
+VALID_ANSWERS = ["A", "B", "C", "D"]
+
 # Creating the class AddQuestion
 class AddQuestion(QDialog):
     def __init__(self, user, parent=None):
