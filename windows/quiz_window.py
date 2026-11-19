@@ -4,6 +4,7 @@ from PyQt5.QtCore import QTimer, Qt
 import random
 import os
 
+QUIZ_DURATION_SECONDS = 1200
 
 class QuizWindow(QDialog):
     def __init__(self, user, quiz_id, quiz_title, subject_name="", parent=None):
