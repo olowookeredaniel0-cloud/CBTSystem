@@ -4,6 +4,7 @@ from PyQt5.QtWidgets import *
 from PyQt5.uic import loadUi
 import os
 
+PASSWORD_LENGTH = 8
 
 class ManageStudents(QDialog):
     def __init__(self, user, parent=None):
